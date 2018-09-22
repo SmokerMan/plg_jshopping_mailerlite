@@ -17,6 +17,9 @@ class plgJshoppingMailerLite extends JPlugin {
 		$this->loadLanguage ();
 	}
 	public function onBeforeDisplayRegisterView(&$view) {
+		if (! $this->params->get ( 'show_register' )) {
+			return;
+		}
 		$html = '
 		<div><label>
 			<input class="checkbox" name="mailerlite_subscribe" value="1" checked="checked" type="checkbox" />

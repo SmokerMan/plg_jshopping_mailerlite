@@ -24,6 +24,10 @@
 			<fieldset name="basic">
 				<field name="key" type="text" label="PLG_JSHOPPING_MAILERLITE_KEY" description="PLG_JSHOPPING_MAILERLITE_KEY_DESC" />
 				<field name="group_id" type="text" label="PLG_JSHOPPING_MAILERLITE_GROUP_ID" description="PLG_JSHOPPING_MAILERLITE_ID_DESC" />
+				<field name="show_register" type="radio" label="PLG_JSHOPPING_MAILERLITE_SHOW_REGISTER" description="PLG_JSHOPPING_MAILERLITE_SHOW_REGISTER_DESC" class="btn-group btn-group-yesno" default="1">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
 				<field name="text" type="text" label="PLG_JSHOPPING_MAILERLITE_TEXT" class="span8" description="PLG_JSHOPPING_MAILERLITE_TEXT_DESC" />
 				<field name="show_admin" type="radio" label="PLG_JSHOPPING_MAILERLITE_SHOW_ADMIN_INFO" description="PLG_JSHOPPING_MAILERLITE_SHOW_ADMIN_INFO_DESC" class="btn-group btn-group-yesno" default="0">
 					<option value="1">JYES</option>
