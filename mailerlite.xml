@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="plugin" group="jshopping" method="upgrade">
+	<name>plg_jshopping_mailerlite</name>
+	<author>SmokerMan</author>
+	<creationDate>10.08.2016</creationDate>
+	<copyright>© 2016 All rights reserved.</copyright>
+	<license>GNU/GPL v.3 or later.</license>
+	<authorEmail />
+	<authoreUrl>joomla-code.ru</authoreUrl>
+	<version>1.0</version>
+	<description>PLG_JSHOPPING_MAILERLITE_DESCRIPTION</description>
+	<scriptfile>install.php</scriptfile>
+	<files>
+		<filename plugin="mailerlite">mailerlite.php</filename>
+		<filename>index.html</filename>
+		<filename>install.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jshopping_mailerlite.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_jshopping_mailerlite.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="key" type="text" label="PLG_JSHOPPING_MAILERLITE_KEY" description="PLG_JSHOPPING_MAILERLITE_KEY_DESC" />
+				<field name="group_id" type="text" label="PLG_JSHOPPING_MAILERLITE_GROUP_ID" description="PLG_JSHOPPING_MAILERLITE_ID_DESC" />
+				<field name="text" type="text" label="PLG_JSHOPPING_MAILERLITE_TEXT" class="span8" description="PLG_JSHOPPING_MAILERLITE_TEXT_DESC" />
+				<field name="show_admin" type="radio" label="PLG_JSHOPPING_MAILERLITE_SHOW_ADMIN_INFO" description="PLG_JSHOPPING_MAILERLITE_SHOW_ADMIN_INFO_DESC" class="btn-group btn-group-yesno" default="0">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
